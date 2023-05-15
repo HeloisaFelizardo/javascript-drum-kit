@@ -16,17 +16,14 @@ const keys = document.querySelectorAll('.key');
 
 keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
 
-window.addEventListener('keydown', playSound);
-
-/* if (
+if (
 	/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
 		navigator.userAgent
 	)
 ) {
-	window.addEventListener('click', playSound);
+	window.addEventListener('touchstart', playSound);
 	console.log('mobile');
 } else {
 	window.addEventListener('keydown', playSound);
 	console.log('desktop');
 }
- */
