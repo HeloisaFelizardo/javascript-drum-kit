@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript Drum Kit</title>
+		<!--Normalize.CSS-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+			integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="keys">
+				<div data-key="a" class="key">
+					<kbd>A</kbd>
+					<span class="sound">Clap</span>
+				</div>
+				<div data-key="s" class="key">
+					<kbd>S</kbd>
+					<span class="sound">HitHat</span>
+				</div>
+				<div data-key="d" class="key">
+					<kbd>D</kbd>
+					<span class="sound">Kick</span>
+				</div>
+				<div data-key="f" class="key">
+					<kbd>F</kbd>
+					<span class="sound">OpenHat</span>
+				</div>
+				<div data-key="g" class="key">
+					<kbd>G</kbd>
+					<span class="sound">Boom</span>
+				</div>
+				<div data-key="h" class="key">
+					<kbd>H</kbd>
+					<span class="sound">Ride</span>
+				</div>
+				<div data-key="j" class="key">
+					<kbd>J</kbd>
+					<span class="sound">Snare</span>
+				</div>
+				<div data-key="k" class="key">
+					<kbd>K</kbd>
+					<span class="sound">Tom</span>
+				</div>
+				<div data-key="l" class="key">
+					<kbd>L</kbd>
+					<span class="sound">Tink</span>
+				</div>
+			</div>
+		</div>
+
+		<audio data-key="a" src="sounds/clap.wav"></audio>
+		<audio data-key="s" src="sounds/hihat.wav"></audio>
+		<audio data-key="d" src="sounds/kick.wav"></audio>
+		<audio data-key="f" src="sounds/openhat.wav"></audio>
+		<audio data-key="g" src="sounds/boom.wav"></audio>
+		<audio data-key="h" src="sounds/ride.wav"></audio>
+		<audio data-key="j" src="sounds/snare.wav"></audio>
+		<audio data-key="k" src="sounds/tom.wav"></audio>
+		<audio data-key="l" src="sounds/tink.wav"></audio>
+
+		<script src="js/scripts.js"></script>
+
+		<footer class="copy">Criado por Heloisa Felizardo - 2023</footer>
+	</body>
+</html>
