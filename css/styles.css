@@ -19,6 +19,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 6rem;
 }
 .key {
 	display: grid;
@@ -58,9 +59,6 @@ kbd {
 }
 
 footer {
-	position: fixed;
-	left: 0;
-	bottom: 0;
 	width: 100vw;
 	background: rgba(0, 0, 0, 0.4);
 	text-align: center;
