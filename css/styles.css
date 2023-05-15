@@ -3,12 +3,11 @@
 }
 
 body {
-	/* background-image: url('../img/background.jpg'); */
+	background-image: url('../img/background.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
 .container {
-	background-image: url('../img/bg.jpg');
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
