@@ -67,9 +67,3 @@ footer {
 	font-family: 'Roboto', sans-serif;
 	letter-spacing: 0.05rem;
 }
-
-@media screen and (max-width: 380px) {
-	.pokemons {
-		grid-template-columns: 1fr 1fr;
-	}
-}
