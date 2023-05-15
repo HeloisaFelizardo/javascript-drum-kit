@@ -9,6 +9,7 @@ background-color: #000;
 	background-attachment: fixed;
 }
 .container {
+background-color: #000;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
