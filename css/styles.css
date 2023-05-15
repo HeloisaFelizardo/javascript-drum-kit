@@ -18,7 +18,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin-bottom: 6rem;
+	margin-bottom: 20px;
 }
 .key {
 	display: grid;
