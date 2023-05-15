@@ -3,7 +3,7 @@
 }
 
 body {
-	background-image: url('https://heloisafelizardo.github.io/javascript-drum-kit/img/background.jpg');
+	background-image: url('./img/background.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
