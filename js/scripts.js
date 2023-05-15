@@ -16,7 +16,9 @@ const keys = document.querySelectorAll('.key');
 
 keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
 
-if (
+window.addEventListener('keydown', playSound);
+
+/* if (
 	/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
 		navigator.userAgent
 	)
@@ -27,3 +29,4 @@ if (
 	window.addEventListener('keydown', playSound);
 	console.log('desktop');
 }
+ */
