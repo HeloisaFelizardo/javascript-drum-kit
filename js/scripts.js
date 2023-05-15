@@ -23,24 +23,18 @@ if (
 	)
 ) {
 	// Selecionar todas as divs com o atributo 'data-key'
-	const divs = document.querySelectorAll('[data-key]');
+	const divs = document.querySelectorAll('.key[data-key]');
+	console.log(divs);
 
 	// Adicionar o evento 'touchstart' a cada div
 	divs.forEach((div) => {
-		div.addEventListener('touchstart', function (event) {
-			// Prevenir o comportamento padrão do evento
-			event.preventDefault();
-
-			// Obter o valor do atributo 'data-key'
-			const dataKey = this.getAttribute('data-key');
-
-			// Chamar a função desejada com base no valor do 'data-key'
-			playSoundTouch(dataKey);
-		});
+		div.addEventListener('touchstart', playSoundTouch);
 	});
 
 	// Função chamada quando ocorre o evento 'touchstart'
-	const playSoundTouch = (dataKey) => {
+	function playSoundTouch(e) {
+		// Obter o valor do atributo 'data-key'
+		const dataKey = e.currentTarget.getAttribute('data-key');
 		console.log('Div clicada com data-key:', dataKey);
 		// Realize qualquer ação desejada com base no valor do 'data-key'
 		const audio = document.querySelector(`audio[data-key='${dataKey}']`);
@@ -48,7 +42,7 @@ if (
 		audio.currentTime = 0; //rewind to start
 		audio.play();
 		key.classList.add('playing');
-	};
+	}
 	console.log('mobile');
 } else {
 	window.addEventListener('keydown', playSound);
