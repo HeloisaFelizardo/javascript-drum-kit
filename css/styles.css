@@ -6,6 +6,7 @@ body {
 	background-image: url('../img/background.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+	height: 100vh;
 }
 .container {
 	display: flex;
@@ -57,8 +58,6 @@ kbd {
 }
 
 footer {
-	width: 100vw;
-	margin-top: 10px;
 	background: rgba(0, 0, 0, 0.4);
 	text-align: center;
 	padding: 2rem;
