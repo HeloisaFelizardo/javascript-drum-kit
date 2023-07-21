@@ -17,11 +17,7 @@ const keys = document.querySelectorAll('.key');
 keys.forEach((key) => key.addEventListener('transitionend', removeTransition));
 ////////////////////////////////////////////////////////////////////////////////////////
 
-if (
-	/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-		navigator.userAgent
-	)
-) {
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	// Selecionar todas as divs com o atributo 'data-key'
 	const divs = document.querySelectorAll('.key[data-key]');
 	console.log(divs);
